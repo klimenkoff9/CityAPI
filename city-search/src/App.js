@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import CitySearchApp from './CitySearchApp.js';
 import './App.css';
 
+/*Implement a City Search field that takes city names */
 function App() {
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="AppPage">
+        <div className="CityAppBanner">
+            <h1>ZipApp</h1>
+        </div>
+        <div className="CitySearchApp">
+            <CitySearchApp />
+        </div>
     </div>
   );
 }
