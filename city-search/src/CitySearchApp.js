@@ -10,7 +10,7 @@ class CitySearchApp extends React.Component {
     }
 
     handleChange(e) {
-        this.setState({cityValue : e.target.value});
+        this.setState({cityValue : e.target.value.toUpperCase()});
     }
     
     async handleSubmit(e) {
